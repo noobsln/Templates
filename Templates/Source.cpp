@@ -2,7 +2,7 @@
 using namespace std;
 
 template<typename T> T half(T num) { return num / 2; }
-template<> int half<int>(int num) { return static_cast<int>(num)/2; }
+template<> int half<int>(int num) { return round(static_cast<float>(num)/2); }
 
 int main() {
 	double a = 7.0;
